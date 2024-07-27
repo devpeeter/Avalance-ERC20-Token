@@ -1,6 +1,6 @@
  
-# Meta ERC20 Token
-Meta ERC20 Token is a simple ERC20 smart contract. It is not a complete ERC20 functions. 
+# MetaERC20Token
+MetaERC20Token is a simple ERC20 smart contract. It is not a complete ERC20 functions. 
 
 ## Description
 This is a simple an ERC20 smart contract written in Solidity comprising ten functions: four defined functions and six automatically generated functions.
@@ -26,13 +26,13 @@ After cloning the github, do the following to get the code running on your compu
 
 - Inside the project directory, in the terminal type: npm i
 - Open two terminals in your VS code or your preferred IDE
-- In the first terminal type: ```npx hardhat``` compile to compile your contracts
+- In the first terminal type: ```npx hardhat compile``` to compile your contracts
 - In the second terminal type: ```npx hardhat node``` to set up local nodes
-- Go back to the first terminal and type: ```npx hardhat run --network localhost scripts/deploy.js``` to deploy your contract
+- Go back to the first terminal and type: ```npx hardhat ignition deploy ./ignition/modules/MetaERC20Token.ts --network localhost``` to deploy your contract
 - To interact with the functions in the contract, you can create another file in the script folder to write your interaction scripts.
 
 ## Authors
-Warith Adebowale
+Peter Fatukasi
 
 ## License
 This project is licensed under the MIT License - see the LICENSE.md file for details
