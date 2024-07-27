@@ -16,6 +16,11 @@ contract MetaERC20Token is ERC20, Ownable {
         _mint(_account, _amount);
     }
 
+     function transfer(address to, uint256 value) public override  returns (bool) {
+        address owner = _msgSender();
+        _transfer(owner, to, value);
+        return true;
+    }
    
 
     function burn(uint96 _amount) external {
